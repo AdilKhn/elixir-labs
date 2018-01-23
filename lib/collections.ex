@@ -1,6 +1,6 @@
 defmodule Collections do
-  def doThis do
-    "hi"
+  def getLength(collection) do
+    Enum.count(collection)
   end
 end
 
