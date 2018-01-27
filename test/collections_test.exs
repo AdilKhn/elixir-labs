@@ -17,8 +17,13 @@ defmodule CollectionsTest do
     assert Enum.max([9, 99, 3,4]) == 99
   end
 
-  test 'Sort a list' do
-    assert Enum.max(Enum.random(0..100000)) === 9999
+  test 'add to a list' do
+    x = []
+    x = x ++ [1]
+    x = x ++ [2]
+    x = x ++ [4]
+
+    assert x == [1,2,4]
   end
 
 
