@@ -13,6 +13,10 @@ defmodule Compute do
   end
 
 
+  def get_biggest_prime(num) do
+     get_primes(num) |> List.last
+  end
+
   def get_primes(num) do
     l = []
     final  = for n <- 1..num do
